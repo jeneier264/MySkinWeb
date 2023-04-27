@@ -1,0 +1,66 @@
+.banner
+{
+    background-image: url(../../../assets/img/main.jpg);
+    height: 455px;
+    background-position: center top;
+    background-size: cover;
+}
+
+.content1
+{
+    top: 50%;
+    left: 10%;
+    position: absolute;
+}
+
+.content2
+{
+    top: 65%;
+    left: 70%;
+    position: absolute;
+}
+
+.typing
+{
+  width: 7ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 35px;
+}
+
+.arrow {
+  text-decoration:none;
+  color: black;
+}
+
+.arrow:hover {
+  text-decoration:underline;
+}
+.arrow.active-link{
+  color: rgb(133, 108, 75);
+}
+
+
+.arrow:after {
+    position: absolute; /* Prevent underline of arrow */
+    padding-left:2px; /* Add a little space between text and arrow */
+    content: "\00bb"; /* Unicode hex for &raquo; */
+}
+
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+

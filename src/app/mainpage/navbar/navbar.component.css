@@ -1,0 +1,25 @@
+
+
+.center {
+
+  display: flex;
+  justify-content: center;
+}
+
+ion-icon {
+  font-size: 20px;
+
+}
+
+.navbar {
+  margin-top: 5px;
+  border-bottom: 1px solid rgb(49, 49, 49);
+  border-top: 1px solid rgb(49, 49, 49);
+  overflow: hidden;
+  padding: 7px 10px;
+}
+
+
+.nav-link.active-link{
+  color: rgb(133, 108, 75);
+}

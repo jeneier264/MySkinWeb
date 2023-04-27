@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+
+  <div class="row">
+
+      <div class="col-lg-4" *ngFor="let prod of prodData">
+
+          <div class="products">
+            <div class="pic">
+              <a routerLink="/"><img src="{{prod.prodImg}}" class="image"></a>
+            </div>
+              <h5 class="name">{{prod.prodName}}</h5>
+              <p>{{prod.prodDetails}}</p>
+              <div class="row">
+                <p class="col">{{prod.prodPrice | currency:'USD'}}</p>
+                <button class="button">
+                  <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+
+          </div>
+
+      </div>
+
+
+
+  </div>
+
+</div>
+
+<app-footer></app-footer>
